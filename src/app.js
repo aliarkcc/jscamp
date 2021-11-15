@@ -1,24 +1,42 @@
-console.log("Merhaba Dünya");
+let sayi1="asd";
+sayi1="Mehmet Ali";
+let student={id:1,name:"Mali"}
+//console.log(student)
 
-let dolarBugun=9.30
+//Save(student,20); 
 
-let dolarDun=9.20
-
-{
-    let dolarDun=9.10
+function Save(ogrenci,puan=100) {
+    console.log(ogrenci.name+":"+puan)
 }
 
-console.log(dolarDun)
+let students=["Mehmet Ali","Caner","Yaren"]
 
-const eurodun=11.2
+//console.log(students)
 
-console.log(eurodun)
+let students2=[students,{id:4,name:"Efe"},"Aksaray",{sinif:"11/B",ogretmen:"Sultan İztaş"}]
+
+//console.log(students2)
 
 
-let Krediler=["ihtiyaç","taşıt","konuk"]
-console.log("<ul>")
-for (let i = 0; i < Krediler.length; i++) {
-    console.log("<li>"+Krediler[i]+"</li>")   
+let showProducts=function (id,...products) {
+    console.log(id)
+    console.log(products[1])
 }
-console.log("<ul>")
-console.log(Krediler)
+
+//showProducts(1 ,["HAHA","0","Mal"],["HAHA","1","Mal"],["HAHA","2","Mal"])
+let points=[1,2,4,5,6,7,8,9,10]
+//console.log(Math.max(...points))
+
+let populations=[10000,20000,30000]
+let[a,b,c]=populations
+//console.log(a)
+
+let category={id:1,name:"Ekmek"}
+
+//console.log(category.id)
+//console.log(category["name"])
+
+
+let {id,name}=category
+
+console.log(name)
